@@ -26,6 +26,7 @@ Users can register a vehicle, view and sort the vehicle list, and manage the cat
 - Node.js 22.12+ or Node.js 24, with npm.
 - Microsoft SQL Server 2019 or later, or Docker Desktop to run the included SQL Server 2022 container.
 - Git.
+- Docker Desktop (recommended for Mac users).
 
 Run the following commands from the project root unless stated otherwise.
 
@@ -42,7 +43,7 @@ cp .env.example .env
 ```
 
 Open `.env` and replace `MSSQL_SA_PASSWORD` with a strong local
-password before starting Docker Compose.
+password before starting Docker Compose. (If using Mac Computer: ensure Docker Desktop is installed and running prior to running the Docker commands).
 
 ```sh
 docker compose up -d
