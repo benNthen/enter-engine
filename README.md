@@ -228,12 +228,12 @@ Integration tests cover:
 
 ```sh
 cd frontend
-npm test -- src/sortVehicles.test.ts
+npm run test:report
 ```
 
 Frontend tests cover:
 
-- Sorting logic from function exported at `src\sortVehicles.ts`
+- Sorting logic from function exported at `TestResults/Frontend/results.xml`
 
 ### Save backend test reports
 

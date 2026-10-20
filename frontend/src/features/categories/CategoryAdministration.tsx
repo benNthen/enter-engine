@@ -22,10 +22,6 @@ type ApiProblem = {
   errors?: Record<string, string[]>
 }
 
-type Props = {
-  onSaved: () => Promise<void>
-}
-
 function toDraft(category: SavedCategory): DraftCategory {
   return {
     key: crypto.randomUUID(),
@@ -37,7 +33,7 @@ function toDraft(category: SavedCategory): DraftCategory {
   }
 }
 
-export default function CategoryAdministration({ onSaved }: Props) {
+export default function CategoryAdministration() {
   const [rows, setRows] = useState<DraftCategory[]>([])
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
@@ -189,9 +185,6 @@ export default function CategoryAdministration({ onSaved }: Props) {
       }
 
       committed = true
-
-      // Recalculate the categories displayed for existing vehicles.
-      await onSaved()
 
       const savedCategories = await fetchCategories()
       setRows(savedCategories.map(toDraft))
