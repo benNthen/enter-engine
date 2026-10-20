@@ -1,0 +1,21 @@
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Backend build output
+**/bin/
+**/obj/
+
+# Frontend dependencies and builds
+**/node_modules/
+**/dist/
+
+# Test reports
+**/TestResults/
+**/coverage/
+*.trx
+
+# Local editor and system files
+.vs/
+.DS_Store

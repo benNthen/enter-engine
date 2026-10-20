@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="EnterEngine.Api/EnterEngine.Api.csproj" />
+  <Project Path="EnterEngine.Tests/EnterEngine.Tests.csproj" />
+</Solution>
