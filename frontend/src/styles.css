@@ -9,6 +9,22 @@ main { max-width: 900px; margin: 0 auto; padding: 48px 24px; }
 p { line-height: 1.6; }
 a { color: #17627b; }
 
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.page-header h1 {
+  margin: 0;
+}
+
+.category-admin-navigation {
+  margin-left: auto;
+}
+
 .vehicle-table {
   width: 100%;
   border-collapse: collapse;
@@ -68,5 +84,14 @@ a { color: #17627b; }
 @media (max-width: 600px) {
   .create-vehicle-form fieldset {
     grid-template-columns: 1fr;
+  }
+
+  .page-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .category-admin-navigation {
+    margin-left: 0;
   }
 }
