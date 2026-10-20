@@ -298,11 +298,3 @@ Set the environment variable in the same terminal used to run the tests. API Use
 ### Port 1433 is already in use
 
 Check whether an existing SQL Server container is running. Reuse it or stop it before starting another container on the same port.
-
-## Deployment
-
-GitHub Pages can host the compiled React frontend. The ASP.NET Core API and SQL Server require separate hosting.
-
-Deployment also requires an API address accessible to the frontend, HTTPS and any necessary CORS configuration. The Vite development proxy is not included in the production build.
-
-Keep `.env`, credentials, `node_modules` and build output out of source control. A private GitHub repository does not automatically make a deployed website private.
